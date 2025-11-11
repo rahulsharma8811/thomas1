@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    FullName:
+    <input type="text" id="fullname" required><br> Email:
+    <input type="email" id="email" required>
+    <br> Password: <input type="password" id="password" required><br>
+    <button onclick="
+  if (fullname.value && email.value && password.value) {
+    result.style.display = 'block';
+  } else {
+    alert('fill fields');
+  }
+">
+  Registration
+</button>
+
+    <p id='result' style='display:none;'>Registration Successful!</p>
+
+
+</body>
+
+</html>
